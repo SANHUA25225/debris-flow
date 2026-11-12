@@ -9,6 +9,8 @@ data/
   guilin/    桂林市泥石流灾害点（34 个点，Shapefile）
   guangxi/   广西全区地质灾害点（15440 条，Shapefile）+ 原始压缩包
 output/      整理成果表（Excel）
+万乡河研究_最终验收版/   万乡河流域洪涝/泥石流双灾种危险性—暴露性—风险研究
+                         最终数据版本（详见该目录下 README.md）
 ```
 
 ### data/guilin
