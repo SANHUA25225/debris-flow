@@ -1,0 +1,2 @@
+# Shapefile 属性表使用 Git LFS 存储（广西.dbf 超过 GitHub 100MB 限制）
+*.dbf filter=lfs diff=lfs merge=lfs -text
