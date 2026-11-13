@@ -12,6 +12,7 @@ data/                        空间数据
   广西地质灾害数据.zip         上一项的原始压缩包（1.76 MB，免 LFS 备用）
   Guilin_clipped/            裁剪到桂林市的水系（HYDL）、道路（LRDL）
   桂林矢量边界/                桂林市行政边界（Guilin）
+  Guilin-DEM*.tif            桂林市 DEM 高程数据（原始投影版 + UTM49N 版）
 output/                      表格成果
   桂林市泥石流灾害点清单（34处）.xlsx
   gxjc_图层代码对照表.xlsx
@@ -48,6 +49,16 @@ output/                      表格成果
 
 `Guilin.shp` 等为桂林市行政边界。
 
+### data/Guilin-DEM*.tif（DEM 高程数据）
+
+| 文件 | 大小 | 说明 |
+| --- | --- | --- |
+| `Guilin-DEM.tif` | 98.46 MB | 桂林市 DEM（原始投影） |
+| `Guilin-DEM_32649.tif` | 165.06 MB | 桂林市 DEM，坐标系 WGS84 / UTM 49N（EPSG:32649），文件后缀即 EPSG 代码 |
+| `Guilin-DEM.tif.aux.xml` | 410 B | `Guilin-DEM.tif` 的配套元数据（拉伸/统计信息） |
+
+两个 `.tif` 均超过 GitHub 单文件 100 MB 限制，由 **Git LFS** 管理。
+
 ## output 表格
 
 ### 桂林市泥石流灾害点清单（34处）.xlsx
@@ -70,7 +81,7 @@ output/                      表格成果
 ## 使用说明
 
 - 用 QGIS / ArcGIS 直接打开 `.shp`（属性表在 `.dbf`）。
-- 克隆后若 `data/广西地质灾害数据/广西.dbf` 只有几行文本（LFS 指针），安装 Git LFS 后执行 `git lfs pull`；或直接解压 `data/广西地质灾害数据.zip`。
+- 克隆后若 `data/广西地质灾害数据/广西.dbf` 或 `data/Guilin-DEM*.tif` 只有几行文本（LFS 指针），安装 Git LFS 后执行 `git lfs pull`；dbf 也可直接解压 `data/广西地质灾害数据.zip`。
 - 中文文件名在 Git 中以转义形式存储，克隆后不要重命名。
 
 ## 免责
